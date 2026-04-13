@@ -1021,6 +1021,30 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.2; }
   transition: opacity var(--transition);
 }
 .footer__logo-link:hover .footer__logo-img { opacity: 1; }
+/* Social icons in footer */
+.footer__social {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+.footer__social-link {
+  width: 36px; height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255,255,255,.1);
+  color: rgba(255,255,255,.65);
+  transition: var(--transition);
+}
+.footer__social-link svg { width: 17px; height: 17px; }
+.footer__social-link:hover { background: rgba(255,255,255,.2); color: #fff; transform: translateY(-2px); }
+.footer__social-link--wa:hover { background: #25D366; color: #fff; }
+
+/* WhatsApp icon tint in contact section */
+.contact__detail-icon--wa { background: #E8F5E9; color: #25D366 !important; }
+.contact__detail-icon--wa svg { fill: #25D366; }
+
 .footer__company-name {
   font-size: 13px;
   font-weight: 700;
