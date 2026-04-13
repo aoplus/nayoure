@@ -19,6 +19,7 @@ pages_build_output_dir = "."
 #   Add rule: contact@nayoure.com → your-personal@email.com
 #   Add rule: info@nayoure.com    → your-personal@email.com
 
-[[send_email]]
-name = "CONTACT_EMAIL"
-destination_address = "info@nayoure.com"
+# Email binding (add via Cloudflare Pages dashboard):
+#   Pages → nayoure → Settings → Functions → Email bindings
+#   Variable name : CONTACT_EMAIL
+#   Destination   : info@nayoure.com
