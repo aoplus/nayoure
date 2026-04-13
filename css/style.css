@@ -220,6 +220,14 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.2; }
   gap: 32px;
 }
 
+/* Logo image in nav — transparent PNG */
+.nav__logo-img {
+  height: 42px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
 .nav__logo {
   display: flex;
   align-items: center;
@@ -998,8 +1006,29 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.2; }
   padding-bottom: 48px;
 }
 
-.footer__logo { color: #fff !important; margin-bottom: 12px; }
-.footer__logo .nav__logo-icon { color: var(--green-300) !important; }
+.footer__logo-link {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.footer__logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  /* Invert brown to white on dark footer */
+  filter: brightness(0) invert(1);
+  opacity: 0.85;
+  transition: opacity var(--transition);
+}
+.footer__logo-link:hover .footer__logo-img { opacity: 1; }
+.footer__company-name {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  color: rgba(255,255,255,.5);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
 
 .footer__tagline {
   font-family: var(--font-display);
@@ -1051,6 +1080,9 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.2; }
   font-size: 13px;
   color: rgba(255,255,255,.4);
 }
+.footer__legal { display: flex; flex-direction: column; gap: 3px; }
+.footer__legal-details { font-size: 11px; color: rgba(255,255,255,.28); letter-spacing: .02em; }
+.footer__made { font-size: 13px; color: rgba(255,255,255,.35); flex-shrink: 0; }
 
 /* ═══════════════════════════════════════════════════════════════
    RESPONSIVE — TABLET (≤900px)
