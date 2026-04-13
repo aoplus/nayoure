@@ -1,0 +1,3 @@
+# Cloudflare Pages redirects
+# Force www → apex (or apex → www, pick one)
+https://www.nayoure.com/* https://nayoure.com/:splat 301
